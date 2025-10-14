@@ -1,0 +1,49 @@
+@media (max-width: 545px) {
+    .box-3 .card-body {
+        background-size: 80%;
+    }
+}
+
+@media (max-width: 571px) {
+    .background-footer {
+        background-size: 60%;
+    }
+}
+
+@media (max-width: 686px) {
+
+    .background-footer,
+    .box-3 .card-body {
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .background-footer,
+    .box-3 .card-body {
+        background-size: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .background-footer {
+        background-size: 35%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .background-footer {
+        background-size: 20%;
+    }
+
+    .box-3 .card-body {
+        background-size: 35%;
+    }
+}
+
+@media (max-width: 1246px) {
+    .box-3 .card-body {
+        background-size: 80%;
+    }
+}
