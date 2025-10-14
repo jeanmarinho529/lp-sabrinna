@@ -1,0 +1,303 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+.main-page {
+    /* stroke-width: 2px;
+    stroke: var(--gray-50, #F9FAFB);
+    opacity: 0.5; */
+
+    background-image: url('../images/ellipse1.png'), url('../images/glass.png');
+    background-position: center, left;
+
+    /* background-image: url('../images/ellipse1.png'); */
+    background-repeat: no-repeat;
+
+    /* background-image: url("../images/wepik-export-20240104082948rhdl 1.png"), url('../images/ellipse1.png'), url('../images/glass.png');
+    background-position: center, center, left;
+    height: 500px; */
+
+    /* max-width: 1320px; */
+    /* margin: auto; */
+}
+
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.logo:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+}
+
+header .nav-link:hover,
+footer .nav-link:hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: var(--custom-primary-color);
+    transform: scale(1.03);
+}
+
+header .btn-primary:hover {
+    transition: transform 0.6s ease;
+    transform: scale(1.06);
+}
+
+
+.btn-primary,
+.btn-secondary {
+    display: flex;
+    padding: 8px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 60px;
+}
+
+.bg-body-gray {
+    background: #F8F8F8;
+}
+
+
+.services-box {
+    background: #F9FAFB;
+}
+
+.box-1 .card {
+    background: #D1E6E1;
+}
+
+.box-2 .card {
+    background: #C5E4F6;
+}
+
+.box-3 .card {
+    background: #C7D9A7;
+}
+
+.logo:hover,
+.box-1:hover,
+.box-2:hover,
+.box-3:hover,
+.text-box:hover {
+    transition: transform 0.6s ease;
+    transform: scale(1.01);
+}
+
+.box-3 .card-body {
+    background-image: url('../images/background-logo.png');
+    background-position: bottom right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+/* .box-1:hover {
+    animation: shake 0.3s;
+} */
+
+
+/* Animação de tremor */
+/* @keyframes shake {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(3px, 0px);
+    }
+
+    50% {
+        transform: translate(-3px, 0px);
+    }
+
+    75% {
+        transform: translate(3px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+} */
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(3px, 3px);
+    }
+
+    40% {
+        transform: translate(-3px, -3px);
+    }
+
+    60% {
+        transform: translate(-3px, 3px);
+    }
+
+    80% {
+        transform: translate(3px, -3px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--gray-700, #374151) !important;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.btn-white {
+    display: flex;
+    padding: 8px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 60px;
+    background: #FFF;
+}
+
+.border-gray {
+    border-radius: 60px;
+    border: 1px solid #4B5563 !important;
+    color: var(--gray-800, #1F2A37);
+}
+
+.service-text {
+    width: 70%;
+}
+
+
+/* swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+swiper-slide {
+    margin: 100px;
+} */
+
+
+.background-footer {
+    background-image: url('../images/background-logo-footer.png');
+    background-position: bottom right;
+    background-size: 15%;
+    /* background-size: 60%; */
+    /* quando tiver em tela de celular colocar 60 */
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1050px) {
+    .background-footer {
+        background-size: 20%;
+    }
+}
+
+@media (max-width: 992px) {
+    .background-footer {
+        background-size: 35%;
+    }
+}
+
+@media (max-width: 900px) {
+    .background-footer {
+        background-size: 40%;
+    }
+}
+
+@media (max-width: 686px) {
+    .background-footer {
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 571px) {
+    .background-footer {
+        background-size: 60%;
+    }
+}
+
+
+.easter-egg-text {
+    color: #fff;
+}
+
+.easter-egg-text:hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #EDEDED;
+    /* color: #F8F8F8; */
+}
+
+/* @keyframes earthquake {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    10%  { transform: translate(-2px, 2px) rotate(-1deg); }
+    20%  { transform: translate(2px, -2px) rotate(1deg); }
+    30%  { transform: translate(-2px, 2px) rotate(-1deg); }
+    40%  { transform: translate(2px, -2px) rotate(1deg); }
+    50%  { transform: translate(-2px, 2px) rotate(-1deg); }
+    60%  { transform: translate(2px, -2px) rotate(1deg); }
+    70%  { transform: translate(-2px, 2px) rotate(-1deg); }
+    80%  { transform: translate(2px, -2px) rotate(1deg); }
+    90%  { transform: translate(-2px, 2px) rotate(-1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+} */
+
+/* .easter-egg-box-1:active {
+    animation: shake 0.2s linear;
+}
+
+.btn-white:active {
+    animation: shake 0s linear;
+    animation: none !important;
+} */
+
+
+/* .box-1:hover {
+    animation: shake 0.3s;
+} */
+
+
+
+.easter-egg-badge {
+    display: inline-block;
+    /* necessário para transform */
+    transition: transform 0.6s ease;
+    /* animação suave */
+    cursor: pointer;
+    /* mostra que é clicável */
+}
+
+.easter-egg-badge:active {
+    transform: rotate(3600deg);
+}
+
+
+.rotating-hourglass {
+    display: inline-block;             /* necessário para transformar */
+    animation: spin 3s linear infinite; /* animação contínua */
+  }
+  
+  /* keyframes para rotação contínua */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  

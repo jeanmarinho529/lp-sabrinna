@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Eina03-Regular";
+    src: url("../fonts/Eina03-Regular.woff2") format("woff2"),
+        url("../fonts/Eina03-Regular.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Eina03-Bold";
+    src: url("../fonts/Eina03-Bold.woff2") format("woff2"),
+        url("../fonts/Eina03-Bold.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+
+:root {
+    /* colors */
+    --custom-primary-color: #A0AA72;
+    --custom-primary-hover-color: #C69BB3;
+
+    --custom-secondary-color: #C69BB3;
+    --custom-secondary-hover-color: #C69BB3;
+
+    /* paragraph */
+    --custom-paragraph-color: #505553;
+
+    /* links */
+    --custom-link-color: #505553;
+    --custom-link-hover-color: #505553;
+
+    /* buttons */
+    --custom-btn-primary-color: var(--custom-primary-color);
+    --custom-btn-text-primary-color: #fff;
+    --custom-btn-hover-primary-color: var(--custom-primary-hover-color);
+
+    --custom-btn-secondary-color: var(--custom-secondary-color);
+    --custom-btn-text-secondary-color: #fff;
+    --custom-btn-hover-secondary-color: var(--custom-secondary-hover-color);
+
+
+}
+
+/* custom bootstrap */
+
+:root,
+[data-bs-theme=light] {
+    --bs-primary-rgb: 128, 52, 44;
+}
+
+/* colors */
+
+.primary-color {
+    color: var(--custom-primary-color) !important;
+}
+
+.secondary-color {
+    color: var(--custom-secondary-color) !important;
+}
+
+.paragraph-color {
+    color: var(--custom-paragraph-color) !important;
+}
+
+.link-color {
+    color: var(--custom-link-color) !important;
+}
+
+
+/* background colors */
+
+.bg-primary {
+    background-color: var(--custom-primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--custom-secondary-color) !important;
+}
+
+
+/* texts colors */
+
+h1,
+.h1,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.text-primary {
+    color: var(--custom-primary-color) !important;
+}
+
+h2,
+.h2,
+.text-secondary {
+    color: var(--custom-secondary-color) !important;
+}
+
+p {
+    color: var(--custom-paragraph-color);
+}
+
+a {
+    color: var(--custom-link-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--custom-link-hover-color);
+}
+
+
+/* fonts */
+
+h1,
+.h1,
+.text-primary {
+    font-family: "Eina03-Bold";
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.text-secondary {
+    font-family: "Eina03-Bold";
+    font-size: 2rem;
+    line-height: 2.438rem;
+}
+
+p {
+    font-family: "Eina03-Regular";
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* buttons */
+
+.btn-primary {
+    --bs-btn-color: var(--custom-btn-text-primary-color);
+    --bs-btn-bg: var(--custom-btn-primary-color);
+    --bs-btn-border-color: var(--custom-btn-primary-color);
+    --bs-btn-hover-color: var(--custom-btn-text-primary-color);
+    --bs-btn-hover-bg: var(--custom-btn-hover-primary-color);
+    --bs-btn-hover-border-color: var(--custom-btn-hover-primary-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--custom-btn-text-primary-color);
+    --bs-btn-active-bg: var(--custom-btn-hover-primary-color);
+    --bs-btn-active-border-color: var(--custom-btn-hover-primary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--custom-btn-text-primary-color);
+    --bs-btn-disabled-bg: var(--custom-btn-primary-color);
+    --bs-btn-disabled-border-color: var(--custom-btn-primary-color);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--custom-btn-primary-color);
+    --bs-btn-border-color: var(--custom-btn-primary-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--custom-btn-primary-color);
+    --bs-btn-hover-border-color: var(--custom-btn-primary-color);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--custom-btn-primary-color);
+    --bs-btn-active-border-color: var(--custom-btn-primary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--custom-btn-primary-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--custom-btn-primary-color);
+    --bs-gradient: none;
+}
+
+.btn-secondary {
+    --bs-btn-color: var(--custom-btn-text-secondary-color);
+    --bs-btn-bg: var(--custom-btn-secondary-color);
+    --bs-btn-border-color: var(--custom-btn-secondary-color);
+    --bs-btn-hover-color: var(--custom-btn-text-secondary-color);
+    --bs-btn-hover-bg: var(--custom-btn-hover-secondary-color);
+    --bs-btn-hover-border-color: var(--custom-btn-hover-secondary-color);
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: var(--custom-btn-text-secondary-color);
+    --bs-btn-active-bg: var(--custom-btn-hover-secondary-color);
+    --bs-btn-active-border-color: var(--custom-btn-hover-secondary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--custom-btn-text-secondary-color);
+    --bs-btn-disabled-bg: var(--custom-btn-secondary-color);
+    --bs-btn-disabled-border-color: var(--custom-btn-secondary-color);
+}
+
+.btn-primary,
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
