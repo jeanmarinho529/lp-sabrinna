@@ -1,5 +1,7 @@
 console.log("🔎 Duvido Você Achar Todos os Easter Egg Desse Site 🕵‍♀ 🕵‍♂");
 
+const TOTAL_EASTER_EGGS = 3;
+
 let easterEggs = {
     badge: 0,
     text: 0,
@@ -49,7 +51,7 @@ function updateEasterEggProgress() {
 
     const progress = document.getElementById('easterEggProgressScore');
 
-    progress.textContent = String(totalPoints) + "/5";
+    progress.textContent = String(totalPoints) + "/" + String(TOTAL_EASTER_EGGS);
 }
 
 
@@ -66,7 +68,7 @@ function updateEasterEggProgressConsole(totalPoints, totalPointsOg) {
         console.log("Você achou todos os Easter Egg... 🏆🥇");
     }
 
-    if (totalPointsOg == totalPoints && totalPointsOg == 3 && totalPoints == 3) {
+    if (totalPointsOg == totalPoints && totalPointsOg == TOTAL_EASTER_EGGS && totalPoints == TOTAL_EASTER_EGGS) {
         console.log("Fim de jogo, você achou todos os Easter Egg... 🛑");
     }
 }
