@@ -1,3 +1,15 @@
+.hover-scale {
+    transition: transform 0.6s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+.main-btn:hover {
+    background: none !important;
+}
+
 .container-fluid {
     max-width: 1400px;
 }
@@ -7,6 +19,9 @@
     background-position: center, left;
 
     background-repeat: no-repeat;
+
+    /* background-size: cover, cover; */
+    background-size: 50% 100%, 50% 100%;
 }
 
 .logo {
@@ -214,5 +229,33 @@ swiper-slide .card-text {
     color: #374151;
 
     font-size: 18px;
-
 }
+
+
+.accordion {
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-active-color: #fff;
+
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(160, 170, 114, 1);
+    --bs-accordion-active-bg: var(--custom-primary-color);
+}
+
+.main-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.main-text {
+    font-size: 20px;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: 120%;
+}
+
+/* #C7D9A7 */
+
+/* .bg-primary {
+    background-color: #C7D9A7 !important;
+} */
