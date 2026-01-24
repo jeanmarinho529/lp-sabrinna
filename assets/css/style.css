@@ -1,3 +1,4 @@
+
 .hover-scale {
     transition: transform 0.6s ease;
 }
@@ -23,6 +24,14 @@
     /* background-size: cover, cover; */
     background-size: 50% 100%, 50% 100%;
 }
+
+@media (max-width: 768px) {
+    .main-page {
+        background-image: url('../images/glass.png');
+        background-size: 100% 100%;
+    }
+  }
+
 
 .logo {
     width: 80px;
