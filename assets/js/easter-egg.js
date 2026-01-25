@@ -55,21 +55,47 @@ function updateEasterEggProgress() {
 }
 
 
+// function updateEasterEggProgressConsole(totalPoints, totalPointsOg) {
+//     if (totalPoints == 1 && totalPointsOg != totalPoints) {
+//         console.log("Que comecem os jogos... 🧩");
+//     }
+
+//     if (totalPointsOg != totalPoints) {
+//         console.log("Parabéns você achou um easter egg!")
+//     }
+
+//     if (totalPoints == 3 && totalPointsOg != totalPoints) {
+//         console.log("Você achou todos os Easter Egg... 🏆🥇");
+//     }
+
+//     if (totalPointsOg == totalPoints && totalPointsOg == TOTAL_EASTER_EGGS && totalPoints == TOTAL_EASTER_EGGS) {
+//         console.log("Fim de jogo, você achou todos os Easter Egg... 🛑");
+//     }
+// }
+
 function updateEasterEggProgressConsole(totalPoints, totalPointsOg) {
     if (totalPoints == 1 && totalPointsOg != totalPoints) {
         console.log("Que comecem os jogos... 🧩");
     }
 
     if (totalPointsOg != totalPoints) {
-        console.log("Parabéns você achou um easter egg!")
+        console.log("Parabéns você achou um easter egg!");
     }
 
-    if (totalPoints == 3 && totalPointsOg != totalPoints) {
+    if (totalPoints == TOTAL_EASTER_EGGS && totalPointsOg != totalPoints) {
         console.log("Você achou todos os Easter Egg... 🏆🥇");
+
+        const winModal = new bootstrap.Modal(
+            document.getElementById("easterEggWinModal")
+        );
+        winModal.show();
     }
 
-    if (totalPointsOg == totalPoints && totalPointsOg == TOTAL_EASTER_EGGS && totalPoints == TOTAL_EASTER_EGGS) {
-        console.log("Fim de jogo, você achou todos os Easter Egg... 🛑");
+    if (
+        totalPointsOg == TOTAL_EASTER_EGGS &&
+        totalPoints == TOTAL_EASTER_EGGS
+    ) {
+        console.log("Fim de jogo, você já venceu 🛑");
     }
 }
 
